@@ -1,0 +1,110 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: kyivTypeSans;
+  src: url("/src/assets/fonts/KyivTypeSans-Regular2.ttf");
+}
+@font-face {
+  font-family: mrHamiltoneG;
+  src: url("/src/assets/fonts/mr_HamiltoneG.ttf");
+}
+
+body {
+  background-color: #1f1f1f;
+  color: #ffffff;
+  font-family: "kyivTypeSans";
+}
+
+section,
+header {
+  padding-block: 3rem;
+}
+
+section > .container, header > .container {
+    max-width: 1290px;
+    margin-inline: auto;
+  }
+
+section a.active, header a.active {
+    text-decoration: underline;
+  }
+header nav > p {
+      font-family: "mrHamiltoneG";
+      font-size: 2rem;
+    }
+
+.ff-hamil {
+  font-family: "mrHamiltoneG";
+}
+.text-primary {
+  color: #e09b16;
+}
+.text-secondary {
+  color: #1f1f1f;
+}
+.bg-primary {
+  background-color: #e09b16;
+}
+.banner__section {
+  min-height: 1000px;
+  background: radial-gradient(
+      ellipse at 50%, at 60%,
+      #1f1f1f 10%, #1f1f1f 30%,
+      transparent 90%, transparent 100%
+    ),
+    radial-gradient(
+      ellipse at 80%, at 80%,
+      transparent 0%, transparent 40%,
+      #1f1f1f 95%, #1f1f1f 100%
+    ),
+    url("./assets/images/default.jpg");
+  background: radial-gradient(
+      ellipse at 50% 60%,
+      #1f1f1f 10% 30%,
+      transparent 90% 100%
+    ),
+    radial-gradient(
+      ellipse at 80% 80%,
+      transparent 0% 40%,
+      #1f1f1f 95% 100%
+    ),
+    url("./assets/images/default.jpg");
+}
+.banner__section svg path {
+      stroke: #e09b16 !important;
+      opacity: 0.3;
+    }
+.search__section {
+  min-height: 600px;
+  background: radial-gradient(
+      ellipse at 50%, at 60%,
+      #1f1f1f 10%, #1f1f1f 30%,
+      transparent 90%, transparent 100%
+    ),
+    radial-gradient(
+      ellipse at 80%, at 80%,
+      transparent 0%, transparent 40%,
+      #1f1f1f 95%, #1f1f1f 100%
+    ),
+    url("./assets/images/default1.jpg");
+  background: radial-gradient(
+      ellipse at 50% 60%,
+      #1f1f1f 10% 30%,
+      transparent 90% 100%
+    ),
+    radial-gradient(
+      ellipse at 80% 80%,
+      transparent 0% 40%,
+      #1f1f1f 95% 100%
+    ),
+    url("./assets/images/default1.jpg");
+}
+.search__section input:focus {
+    background-color: #1f1f1f;
+  }
+.pagination .btn {
+    background-color: #e09b16;
+    padding: 0.3rem;
+  }

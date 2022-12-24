@@ -1,0 +1,101 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+$primary-color: #e09b16;
+$secondary-color: #1f1f1f;
+$clr-white: #ffffff;
+
+$ff-kyiv: "kyivTypeSans";
+$ff-hamiltone: "mrHamiltoneG";
+
+@font-face {
+  font-family: kyivTypeSans;
+  src: url("/src/assets/fonts/KyivTypeSans-Regular2.ttf");
+}
+@font-face {
+  font-family: mrHamiltoneG;
+  src: url("/src/assets/fonts/mr_HamiltoneG.ttf");
+}
+
+body {
+  background-color: $secondary-color;
+  color: $clr-white;
+  font-family: $ff-kyiv;
+}
+
+section,
+header {
+  padding-block: 3rem;
+  > .container {
+    max-width: 1290px;
+    margin-inline: auto;
+  }
+  a.active {
+    text-decoration: underline;
+  }
+}
+header {
+  nav {
+    > p {
+      font-family: $ff-hamiltone;
+      font-size: 2rem;
+    }
+  }
+}
+
+.ff-hamil {
+  font-family: $ff-hamiltone;
+}
+.text-primary {
+  color: $primary-color;
+}
+.text-secondary {
+  color: $secondary-color;
+}
+.bg-primary {
+  background-color: $primary-color;
+}
+.banner__section {
+  min-height: 1000px;
+  background: radial-gradient(
+      ellipse at 50% 60%,
+      $secondary-color 10% 30%,
+      transparent 90% 100%
+    ),
+    radial-gradient(
+      ellipse at 80% 80%,
+      transparent 0% 40%,
+      $secondary-color 95% 100%
+    ),
+    url("./assets/images/default.jpg");
+  svg {
+    path {
+      stroke: $primary-color !important;
+      opacity: 0.3;
+    }
+  }
+}
+.search__section {
+  min-height: 600px;
+  background: radial-gradient(
+      ellipse at 50% 60%,
+      $secondary-color 10% 30%,
+      transparent 90% 100%
+    ),
+    radial-gradient(
+      ellipse at 80% 80%,
+      transparent 0% 40%,
+      $secondary-color 95% 100%
+    ),
+    url("./assets/images/default1.jpg");
+  input:focus {
+    background-color: $secondary-color;
+  }
+}
+.pagination {
+  .btn {
+    background-color: $primary-color;
+    padding: 0.3rem;
+  }
+}
